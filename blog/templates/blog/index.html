@@ -6,40 +6,23 @@
 {% endblock %}
 
 {% block css_files %}
+    <link rel="stylesheet" href="{% static 'blog/post.css' %}">
     <link rel="stylesheet" href="{% static 'blog/index.css' %}">
 {% endblock css_files %}
 
 {% block content %}
-    <header id='main-navigation'>
-        <h1><a href=''>Galon's Blog</a></h1>
-        <nav>
-            <a href=''>All Posts</a>
-        </nav>
-    </header>
-
     <section id='welcome'>
         <header>
             <img src="{% static 'blog/images/galon.jpg' %}" alt="Galon - The Author of This Blog"/>
             <h2>GALON STRUGGLING WITH SOFTWARE</h2>
         </header>
-        <p>Hi, I'm Flavio Galon a brazilian software engineer</p>
+        <p>Hi, I'm Flavio Galon - a brazilian software engineer</p>
     </section>
 
     <section id='latest-posts'>
         <h2>My latest struggles</h2>
         <ul>
-            <li>
-                <article class='post'>
-                    <a href="">
-                        <img src="{% static 'blog/images/django.png' %}" alt="Django Logo"/>
-                        <div class='post__content'></div>
-                        <h3>Learning Django</h3>
-                        <p>
-                            Well, writting a blog in Django sounds like a overkill.
-                        </p>
-                    </a>
-                </article>
-            </li>
+            {% include 'blog/includes/post.html' %}
         </ul>
     </section>
 
