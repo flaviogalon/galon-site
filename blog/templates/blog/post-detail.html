@@ -11,22 +11,17 @@
 
 {% block content %}
     <section id='summary'>
-        <h2>Post Title</h2>
+        <h2>{{ post.title }}</h2>
         <article>
-            <img src="{% static 'blog/images/django.png' %}" alt="Post title">
-            <address>By Galon</address>
+            <img src="{% static 'blog/images/'|add:post.image %}" alt="Post title">
+            <address>By {{ post.author }}</address>
             <div>
-                Last updated on <time>November 4th</time>
+                Last updated on <time>{{ post.date|date:"d M Y" }}</time>
             </div>
         </article>
     </section>
 
     <main>
-        <p>
-            Lorem ipsum dolor sit amet consectetur adipisicing elit.
-            Non natus asperiores laborum consequuntur esse ipsa vel architecto
-            nihil accusantium sapiente aperiam, aliquam, alias facilis ducimus
-            culpa ipsum, soluta dolores eligendi.
-        </p>
+        {{ post.content|linebreaks }}
     </main>
 {% endblock content %}
