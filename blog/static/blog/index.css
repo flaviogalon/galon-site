@@ -1,6 +1,6 @@
 #welcome {
     background: linear-gradient(to right top, #151515, #48454d);
-    padding: 6rem 12%;
+    padding: 2rem 12%;
   }
   
   #welcome header {
@@ -25,7 +25,6 @@
     font-size: 3.5rem;
     margin: 0 0 0 2rem;
     color: #e4e4e4;
-    width: 10rem;
   }
   
   #welcome p {
@@ -38,7 +37,7 @@
     padding: 2rem;
     border-radius: 12px;
     width: 60rem;
-    margin: -6rem auto 2rem auto;
+    margin: -2rem auto 2rem auto;
     box-shadow: 1px 1px 12px rgba(0, 0, 0, 0.4);
   }
   
