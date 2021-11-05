@@ -37,8 +37,9 @@
     padding: 2rem;
     border-radius: 12px;
     width: 60rem;
-    margin: -2rem auto 2rem auto;
+    margin: -2rem auto -7rem auto;
     box-shadow: 1px 1px 12px rgba(0, 0, 0, 0.4);
+    position: relative;
   }
   
   #latest-posts h2 {
