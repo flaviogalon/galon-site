@@ -6,5 +6,5 @@ def home_page(request):
 def posts(request):
     return render(request, 'blog/all-posts.html')
 
-def post_page(request):
-    pass
+def post_page(request, slug):
+    return render(request, 'blog/post-detail.html')
