@@ -1,4 +1,20 @@
 # Galon's website
+Built with Django
+
+## Running
+1. Install requirements with
+
+    ```sh
+    pip install -r requirements.txt
+    ```
+2. Run migrations with
+    ```sh
+    python manage.py migrate
+    ```
+3. Run local server with
+    ```sh
+    python manage.py runserver
+    ```
 
 ---
 ## Data Model
