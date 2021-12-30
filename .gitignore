@@ -1,3 +1,6 @@
 __pychache__
 .env
 *.pyc
+
+# virtualenv
+galon-site-env/*
