@@ -4,3 +4,6 @@ __pychache__
 
 # virtualenv
 galon-site-env/*
+
+# sqlite
+*.sqlite3
