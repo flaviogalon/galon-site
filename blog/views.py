@@ -1,7 +1,7 @@
-from django.shortcuts import render, get_object_or_404
-from datetime import date
+from django.shortcuts import get_object_or_404, render
 
 from .models import Post
+
 
 def home_page(request):
     # Django includes the slice on the resulting SQL query!!
@@ -20,5 +20,6 @@ def posts(request):
 def post_page(request, slug):
     post = get_object_or_404(Post, slug=slug)   # same as Post.objects.get(slug=slug)
     return render(request, 'blog/post-detail.html', {
-        'post': post
+        'post': post,
+        'post_tags': post.tag.all()
     })
